@@ -1,0 +1,10 @@
+{% for post in posts %}
+{{ post.title }}
+<!-- 記事本文 -->
+{{ post.convert_markdown_to_html | safe }}
+{% endfor %}
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
